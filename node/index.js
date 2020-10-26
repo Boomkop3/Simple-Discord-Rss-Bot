@@ -32,7 +32,7 @@ function handleCards(data){
 		setTimeout(()=>{
 			displayCard(terraria.pop(), terrariaChannel);
 		}, 1000); // this just looks cooler in the console
-	}, 2250); // 1 per second max + headroom
+	}, 5500); // 1 per second max + headroom
 }
 
 function displayCard(card, channel){
@@ -89,6 +89,7 @@ setTimeout(()=>{
 }, 100);
 setInterval(
 	function(){ 
+		bot.connect();
 		runCron();
 	}, 
 	1000*60*30
